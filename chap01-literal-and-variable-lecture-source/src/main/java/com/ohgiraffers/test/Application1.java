@@ -20,7 +20,7 @@ public class Application1 {
         double d = 34.5;
 
         double e = c * d;
-        double f = c * 4;
+        double f = c + c + d + d;
 
         System.out.println("면적 : " + e);
         System.out.println("둘레 : " + f);
