@@ -19,11 +19,11 @@ public class Application1 {
         double c = 12.5;
         double d = 34.5;
 
-        double f = c * d;
-        double g = c * 4;
+        double e = c * d;
+        double f = c * 4;
 
-        System.out.println("면적 : " + f);
-        System.out.println("둘레 : " + g);
+        System.out.println("면적 : " + e);
+        System.out.println("둘레 : " + f);
 
 
     }
