@@ -39,5 +39,21 @@ public class Application1 {
         System.out.println("result5 = " + result5);
 
 
+        int a = 10;
+        int b = 20;
+        String result;
+
+        if (a > b) {
+            result = "A가 더 큽니다";
+        } else {
+            result = "B가 더 큽니다";
+        }
+        System.out.println(result);
+
+
+                int number = 4; // 이 값을 변경하여 테스트해보세요
+                String isEven = (number % 2 == 0) ? "짝수입니다" : "홀수입니다";
+                System.out.println(isEven);
+
     }
 }
