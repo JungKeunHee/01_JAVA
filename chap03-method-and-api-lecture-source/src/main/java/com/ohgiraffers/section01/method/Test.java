@@ -1,17 +1,27 @@
 package com.ohgiraffers.section01.method;
 
 public class Test {
-
-    public String Name(String a) {
-        return a;
-    }
-
-
     public static void main(String[] args) {
 
-        Test test = new Test();
+        int A;
+        int B;
 
-        String result = test.Name("정근희");
-            System.out.println(result);
+        A = 2;
+        B = 6;
+
+        String C = (A >= 8) ? "출발 확정" : "출발 보류";
+        String D = (B >= 4) ? "출발 확정" : "출발 보류";
+
+        System.out.println("A 패키지 : " + A + " 출발 : " + C);
+        System.out.println("B 패키지 : " + B + " 출발 : " + D);
+
+        int sum = A + B;
+
+        String E = (sum >= 8) ? "출발 확정" : "출발 보류";
+
+        System.out.println("기준 미달이였지만 합산한 결과 : " + E);
+
+
     }
+
 }
