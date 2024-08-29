@@ -33,12 +33,30 @@ public class Application3 {
         /* index. 2. 만든 메소드 호출해보기 */
 
         Application3 A = new Application3();
-        A.testMethod(40);
+        A.testMethod(40); // (값)전달인자
+//        A.testMethod("40"); // 매개변수 공간은 int 형이지만, 인자를 String으로 보내서 오류 발생
+//        A.testMethod(20, 30, 40);  // 준비된 공간이 1개 뿐이지만, 인자를 3개 보냈기 때문에 오류 발생
 
+//        A.testMethod();    // 매개변수는 선언되어 있지만 인자로 값을 전달하지 않으면 오류 발생
+
+        /* index. 3. 변수에 저장한 값을 전달 테스트 */
+        int age = 20;
+        A.testMethod(age);
+
+        /* index. 4. 자동형변환을 이용하여 값 전달 테스트 */
+        byte bNum = 10;
+        A.testMethod(bNum);
+
+        /* index 5. 강제형변환을 이용하여 값 전달 테스트 */
+        long lNum = 1000;
+        A.testMethod((int)lNum);
+
+        /* index 6. 연산의 결과를 이용해서 값 전달 테스트 */
+        A.testMethod(age * 3);
 
     }
 
-    public void testMethod(int test) {
+    public void testMethod(int test) { //매개변수 int test
 
         /* index. 1. 호출할 메소드 만들기 */
 
