@@ -28,4 +28,3 @@ public class Account {
         return (300 - 60 - 5 - 15 + 20) * 1.1;
     }
 }
-
