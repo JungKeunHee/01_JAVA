@@ -19,7 +19,10 @@ public class Test {
 
         String vs = choice > choice2 ? "win" : "lose";
 
+
         System.out.println("결과는 ? " + vs);
+
+
 
 
     }
