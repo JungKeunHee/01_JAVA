@@ -18,5 +18,13 @@ public class RandomMaker {
 
         return b;
     }
+
+    public String tossCoin() {
+        Random tc = new Random();
+        int a = tc.nextInt(2) + 1;
+        String b = (a == 1) ? "앞면" : "뒷면";
+
+        return b;
+    }
 }
 

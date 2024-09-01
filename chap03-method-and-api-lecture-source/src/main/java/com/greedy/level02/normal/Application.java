@@ -41,5 +41,12 @@ public class Application {
 
         System.out.println("=============네 번째================");
 
+        RandomMaker coin = new RandomMaker();
+        coin.tossCoin();
+        String tc = coin.tossCoin();
+
+        System.out.println("동전 앞면 뒷면 둘 중 1개 출력 : " + tc);
+
+
     }
 }
