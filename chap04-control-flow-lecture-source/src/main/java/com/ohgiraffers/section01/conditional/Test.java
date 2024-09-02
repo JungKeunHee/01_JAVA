@@ -4,8 +4,11 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Test2 test = new Test2();
-        test.test();
+//        // 치킨집
+//        Test2 test = new Test2();
+//        test.test();
 
+        Test3 test3 = new Test3();
+        test3.randomUpperAlphabet();
     }
 }
