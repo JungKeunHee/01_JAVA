@@ -38,5 +38,4 @@ public class RandomMaker {
 //
 //        return upper.charAt(rand.nextInt(len));
 //
-//    }
-}
+    }
