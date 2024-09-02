@@ -14,8 +14,7 @@ public class Test3 {
         System.out.print("출력하고 싶은 문자열의 길이수 입력 : ");
         int num = sc.nextInt();
 
-        Random rand = new Random();
-        str.charAt(rand.nextInt(num));
+        int a = str.charAt((int)Math.random() * num);
 
 //        for (int i = num; i <= str.length(); )
 
