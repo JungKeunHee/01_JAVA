@@ -47,6 +47,22 @@ public class Application {
 
         System.out.println("동전 앞면 뒷면 둘 중 1개 출력 : " + tc);
 
-
+//        System.out.println("=============두 번째================");
+//
+//        sc.nextLine();
+//        System.out.print("출력하고 싶은 영어(대문자)를 입력 : ");
+//        String upper = sc.nextLine();
+//
+//
+//        System.out.print("출력하고 싶은 구간부터 숫자 입력 : ");
+//        int rand5 = sc.nextInt();
+//
+//        RandomMaker randomAlphabet = new RandomMaker();
+//        randomAlphabet.randomUpperAlphabet(upper, rand5);
+//
+//        String str2 = randomAlphabet.randomUpperAlphabet(upper, rand5);
+//        System.out.println("입력한 수만큼 알파벳 출력 : " + str2);
+//
+//
     }
 }
