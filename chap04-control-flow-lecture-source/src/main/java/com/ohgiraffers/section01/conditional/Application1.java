@@ -17,8 +17,17 @@ public class Application1 {
 //        B_ifElse c = new B_ifElse();
 //        c.testNestIfElseStatement();
 
-        C_ifElseif d = new C_ifElseif();
-        d.testIfElseIfStatement();
+//        C_ifElseif d = new C_ifElseif();
+//        d.testIfElseIfStatement();
+
+//        C_ifElseif e = new C_ifElseif();
+//        e.improvetestNestedIfElseIfStatement();
+
+//        D_switch f = new D_switch();
+//        f.testSwitchStatement();
+
+    D_switch f = new D_switch();
+    f.testSwitchVendingMachine();
 
     }
 }
