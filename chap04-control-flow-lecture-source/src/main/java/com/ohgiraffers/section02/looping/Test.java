@@ -246,43 +246,48 @@ public class Test {
         if (avg >= 60 && good >= 40 && good2 >= 40 && good3 >= 40) {
             System.out.println("합격입니다!");
 
-            }else if (avg < 60 && good <40 && good2 <40 && good3 <40) {
-                System.out.println("평균 미달로 불합격 입니다");
-                System.out.println("성실 점수 미달로 불합격 입니다");
-                System.out.println("서비스 점수 미달로 불합격 입니다");
-                System.out.println("미소 점수 미달로 불합격 입니다");
+        } else if (avg < 60 && good < 40 && good2 < 40 && good3 < 40) {
+            System.out.println("평균 미달로 불합격 입니다");
+            System.out.println("성실 점수 미달로 불합격 입니다");
+            System.out.println("서비스 점수 미달로 불합격 입니다");
+            System.out.println("미소 점수 미달로 불합격 입니다");
 
-            }else if (avg < 60 && good < 40 && good2 <40) {
-                System.out.println("평균 미달로 불합격 입니다");
-                System.out.println("성실 점수 미달로 불합격 입니다");
-                System.out.println("서비스 점수 미달로 불합격 입니다");
+        } else if (avg < 60 && good < 40 && good2 < 40) {
+            System.out.println("평균 미달로 불합격 입니다");
+            System.out.println("성실 점수 미달로 불합격 입니다");
+            System.out.println("서비스 점수 미달로 불합격 입니다");
 
-            }else if (avg < 60 && good < 40 && good3 <40) {
-                System.out.println("평균 미달로 불합격 입니다");
-                System.out.println("성실 점수 미달로 불합격 입니다");
-                System.out.println("미소 점수 미달로 불합격 입니다");
+        } else if (avg < 60 && good < 40 && good3 < 40) {
+            System.out.println("평균 미달로 불합격 입니다");
+            System.out.println("성실 점수 미달로 불합격 입니다");
+            System.out.println("미소 점수 미달로 불합격 입니다");
 
-            }else if (avg < 60 && good2 < 40 && good3 < 40) {
-                System.out.println("평균 미달로 불합격 입니다");
-                System.out.println("서비스 점수 미달로 불합격 입니다");
-                System.out.println("미소 점수 미달로 불합격 입니다");
+        } else if (avg < 60 && good2 < 40 && good3 < 40) {
+            System.out.println("평균 미달로 불합격 입니다");
+            System.out.println("서비스 점수 미달로 불합격 입니다");
+            System.out.println("미소 점수 미달로 불합격 입니다");
 
-            } else if (avg < 60 && good < 40) {
-                System.out.println("평균 미달로 불합격 입니다");
-                System.out.println("성실 점수 미달로 불합격 입니다");
-            }else if (avg < 60 && good2 < 40) {
-                System.out.println("평균 미달로 불합격 입니다");
-                System.out.println("서비스 점수 미달로 불합격 입니다");
-            }else if (avg < 60 && good3 < 40) {
-                System.out.println("평균 미달로 불합격 입니다");
-                System.out.println("미소 점수 미달로 불합격 입니다");
-            } else if (avg >= 60 && good < 40 && good2 >= 60 && good3 >= 60) {
-                System.out.println("평균은 달성했지만 성실 점수 미달로 불합격 입니다");
-            } else if (avg >= 60 && good >= 60 && good2 < 40 && good3 >= 60) {
-                System.out.println("평균은 달성했지만 서비스 점수 미달로 불합격 입니다");
-            } else if (avg >= 60 && good >= 60 && good2 >= 60 && good3 < 40) {
-                System.out.println("평균은 달성했지만 미소 점수 미달로 불합격 입니다");
-            }
+        } else if (avg < 60 && good < 40) {
+            System.out.println("평균 미달로 불합격 입니다");
+            System.out.println("성실 점수 미달로 불합격 입니다");
+
+        } else if (avg < 60 && good2 < 40) {
+            System.out.println("평균 미달로 불합격 입니다");
+            System.out.println("서비스 점수 미달로 불합격 입니다");
+
+        } else if (avg < 60 && good3 < 40) {
+            System.out.println("평균 미달로 불합격 입니다");
+            System.out.println("미소 점수 미달로 불합격 입니다");
+
+        } else if (avg >= 60 && good < 40 && good2 >= 60 && good3 >= 60) {
+            System.out.println("평균은 달성했지만 성실 점수 미달로 불합격 입니다");
+
+        } else if (avg >= 60 && good >= 60 && good2 < 40 && good3 >= 60) {
+            System.out.println("평균은 달성했지만 서비스 점수 미달로 불합격 입니다");
+
+        } else if (avg >= 60 && good >= 60 && good2 >= 60 && good3 < 40) {
+            System.out.println("평균은 달성했지만 미소 점수 미달로 불합격 입니다");
+        }
 
         System.out.println("================8번 문제================");
         /* 열심히 일한 람쥐가 급여를 계산해 보려고 합니다.
@@ -324,44 +329,38 @@ public class Test {
         System.out.print("매출액 입력 : ");
         int money2 = sc.nextInt();
 
-        if (money2 < 10000000){
+        if (money2 < 10000000) {
             double resultMoney = money + (money2 * 0.0);
             System.out.println("매출액 : " + money2);
             System.out.println("보너스율 : " + "0%");
             System.out.println("월 급여 : " + money);
-            System.out.println("보너스 금액 : " + (int)(money2 * 0.0));
+            System.out.println("보너스 금액 : " + (int) (money2 * 0.0));
             System.out.println("===================");
-            System.out.println("총 급여 : " + (int)resultMoney);
-        }
-
-        else if (money2 >= 10000000 && money2 < 30000000){
+            System.out.println("총 급여 : " + (int) resultMoney);
+        } else if (money2 >= 10000000 && money2 < 30000000) {
             double resultMoney = money + (money2 * 0.01);
             System.out.println("매출액 : " + money2);
             System.out.println("보너스율 : " + "1%");
             System.out.println("월 급여 : " + money);
-            System.out.println("보너스 금액 : " + (int)(money2 * 0.01));
+            System.out.println("보너스 금액 : " + (int) (money2 * 0.01));
             System.out.println("===================");
-            System.out.println("총 급여 : " + (int)resultMoney);
-        }
-
-        else if (money2 >= 30000000 && money2 < 50000000){
+            System.out.println("총 급여 : " + (int) resultMoney);
+        } else if (money2 >= 30000000 && money2 < 50000000) {
             double resultMoney = money + (money2 * 0.03);
             System.out.println("매출액 : " + money2);
             System.out.println("보너스율 : " + "3%");
             System.out.println("월 급여 : " + money);
-            System.out.println("보너스 금액 : " + (int)(money2 * 0.03));
+            System.out.println("보너스 금액 : " + (int) (money2 * 0.03));
             System.out.println("===================");
-            System.out.println("총 급여 : " + (int)resultMoney);
-        }
-
-        else if (money2 >= 5000000){
+            System.out.println("총 급여 : " + (int) resultMoney);
+        } else if (money2 >= 5000000) {
             double resultMoney = money + (money2 * 0.05);
             System.out.println("매출액 : " + money2);
             System.out.println("보너스율 : " + "5%");
             System.out.println("월 급여 : " + money);
-            System.out.println("보너스 금액 : " + (int)(money2 * 0.05));
+            System.out.println("보너스 금액 : " + (int) (money2 * 0.05));
             System.out.println("===================");
-            System.out.println("총 급여 : " + (int)resultMoney);
+            System.out.println("총 급여 : " + (int) resultMoney);
         }
 
         System.out.println("================9번 문제================");
@@ -377,17 +376,13 @@ public class Test {
         System.out.print("키를 입력하세요 : ");
         int height = sc.nextInt();
 
-        if(age2 >= 9 && height >= 110){
+        if (age2 >= 9 && height >= 110) {
             System.out.println("놀이기구 탑승가능");
-        }
-        else if(age2 < 9 && height < 110){
+        } else if (age2 < 9 && height < 110) {
             System.out.println("나이는 9살 넘으면 오시고 키도 더 크고 오시오");
-        }
-
-        else if (age2 < 9){
+        } else if (age2 < 9) {
             System.out.println("9살 넘으면 오시오");
-        }
-        else if (age2 >= 9 && height < 110){
+        } else if (age2 >= 9 && height < 110) {
             System.out.println("키 더 크고 오시오");
         }
 
@@ -402,17 +397,21 @@ public class Test {
         int num2 = sc.nextInt();
 
         int avg2 = (num1 + num2) / 2;
-        if (avg2 >= 60 && num1 >= 60 && num2 >= 60){
+        if (avg2 >= 60 && num1 >= 60 && num2 >= 60) {
             System.out.println("합격");
 
         } else if (avg2 < 60 && num1 < 60 && num2 < 60) {
-            System.out.println("평균 미달 및 두과목 모두 60점 미만");
-        } else if (avg2 < 60 && num1 >=60 && num2 <60 ) {
+            System.out.println("평균 미달 및 두 과목 모두 60점 미만");
+
+        } else if (avg2 < 60 && num1 >= 60 && num2 < 60) {
             System.out.println("평균 미달 및 수학 점수 미달로 불합격");
-        } else if (avg2 < 60 && num1 < 60 && num2 >= 60){
+
+        } else if (avg2 < 60 && num1 < 60 && num2 >= 60) {
             System.out.println("평균 미달 및 국어 점수 미달로 불합격");
+
         } else if (avg2 >= 60 && num1 < 60 && num2 >= 60) {
             System.out.println("평균 60점은 넘지만 국어 점수 미달로 불합격");
+
         } else if (avg2 >= 60 && num1 >= 60 && num2 < 60) {
             System.out.println("평균 60점은 넘지만 수학 점수 미달로 불합격");
         }
@@ -431,19 +430,19 @@ public class Test {
         int car = sc.nextInt();
 
         switch (car) {
-            case 1 :
+            case 1:
                 System.out.println("소형 : 40000원");
                 break;
-            case 2 :
+            case 2:
                 System.out.println("중형 : 55000원");
                 break;
-            case 3 :
+            case 3:
                 System.out.println("대형 : 80000원");
                 break;
-            case 4 :
+            case 4:
                 System.out.println("SUV : 100000원");
                 break;
-            case 5 :
+            case 5:
                 System.out.println("소형 : 120000원");
                 break;
         }
@@ -461,34 +460,32 @@ public class Test {
 
         if (test2 >= 1 && test2 <= 4) {
             System.out.println("봄");
-        }
-        else if(test2 >= 5 && test2 <= 8){
+        } else if (test2 >= 5 && test2 <= 8) {
             System.out.print("여름 온도를 입력하세요 : ");
             int num = sc.nextInt();
 
-            if (num >= 28 && num < 33){
+            if (num >= 28 && num < 33) {
                 System.out.println("폭염경보");
-            }
-            else if  (num < 28){
+            } else if (num < 28) {
                 System.out.println("여름");
-            }
-        }
-        else if(test2 >= 9 && test2 <= 10){
-            System.out.println("가을");
-        }
-        else if(test2 >= 11 && test2 <= 12){
-            System.out.print("겨울 온도를 입력하세요 : ");
-            int num5 = sc.nextInt();
 
-            if (num5 <= -5 && num5 >= -14){
-                System.out.println("한파 주의보");
+            } else if (test2 >= 9 && test2 <= 10) {
+                System.out.println("가을");
+
+            } else if (test2 >= 11 && test2 <= 12) {
+                System.out.print("겨울 온도를 입력하세요 : ");
+                int num5 = sc.nextInt();
+
+                if (num5 <= -5 && num5 >= -14) {
+                    System.out.println("한파 주의보");
+                } else if (num5 > -5) {
+                    System.out.println("겨울");
+                }
             }
-            else if (num5 > -5){
-                System.out.println("겨울");
-            }
-        }
         }
     }
+}
+
 
 
 
