@@ -38,11 +38,12 @@ public class Application9 {
 
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            if ((ch >= 'A' && ch < 'Z') || (ch > 'a' && ch < 'z')) {
-                System.out.println("영문자가 아닌 다른 문자가 들어있습니다");
-                return;
-            } else {
 
+            if (!((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))) {
+                System.out.println("문자가 아닌 다른 형태의 수가 들어있습니다.");
+                return;
+            }
+        }
                 System.out.print("문자 입력 : ");
                 char ch2 = sc.next().charAt(0);
 
@@ -51,13 +52,8 @@ public class Application9 {
                     char ch3 = str.charAt(j);
                     if (ch2 == ch3) {
                         count++;
-                        System.out.println("문자로 입력하신 단어와 일치하는 갯수는 " + count + "개 입니다");
                     }
                 }
+                System.out.println("문자로 입력하신 단어와 일치하는 갯수는 " + count + "개 입니다");
             }
         }
-    }
-}
-
-
-
