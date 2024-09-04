@@ -37,9 +37,10 @@ public class Application10 {
         System.out.print("숫자를 입력하세요 : ");
         int num = sc.nextInt();
 
+
         for (int i = 1; i <= num; i++) {
-            int ch = str.charAt(i - 1); // 문자열에서 charAt으로 한 문자씩 뽑아내어 각 문자에 대한 아스키 코드 확인
-                int result = ch + num; // 각각의 아스키 코드에서 루프할 때마다 정숫값을 더해주기 ex) abc를 입력 후 정숫값 3입력 -> 979899으로 변환 -> 97+3 98+3 99+3
+            int ch = str.charAt(i - 1); // 문자열에서 charAt으로 한 문자씩 뽑아내어 각 문자에 대한 유니코드(숫자) 확인
+            int result = ch + num; // 각각의 아스키 코드에서 루프할 때마다 정숫값을 더해주기 ex) abc를 입력 후 정숫값 3입력 -> 979899으로 변환 -> 97+3 98+3 99+3
                 System.out.print((char)result); // ex) 원래라면 정수값으로 100 101 102를 출력하게 되지만 이것을 다시 char로 형태변환을 해주면 정숫값만큼 밀리듯이 edf로 출력됨
             }
 

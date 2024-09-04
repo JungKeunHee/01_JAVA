@@ -31,7 +31,33 @@ public class Application9 {
          * -- 출력 예시 --
          * 영문자가 아닌 문자가 포함되어 있습니다.
          * */
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("문자열 입력 : ");
+        String str = sc.nextLine();
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if ((ch >= 'A' && ch < 'Z') || (ch > 'a' && ch < 'z')) {
+                System.out.println("영문자가 아닌 다른 문자가 들어있습니다");
+                return;
+            } else {
+
+                System.out.print("문자 입력 : ");
+                char ch2 = sc.next().charAt(0);
+
+                int count = 0;
+                for (int j = 0; j < str.length(); j++) {
+                    char ch3 = str.charAt(j);
+                    if (ch2 == ch3) {
+                        count++;
+                        System.out.println("문자로 입력하신 단어와 일치하는 갯수는 " + count + "개 입니다");
+                    }
+                }
+            }
+        }
     }
 }
+
 
 
