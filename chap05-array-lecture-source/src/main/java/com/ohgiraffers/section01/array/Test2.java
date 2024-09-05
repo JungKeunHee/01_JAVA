@@ -50,6 +50,7 @@ public class Test2 {
                 System.out.println("준비된 과일이 없습니다.");
             }
          }
+
     }
 }
 
