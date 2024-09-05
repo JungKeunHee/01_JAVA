@@ -32,9 +32,28 @@ public class Application11 {
         // 금액 입력
 
         Scanner sc = new Scanner(System.in);
+        System.out.print("받으신 금액을 입력 : ");
+        int money = sc.nextInt();
 
+        System.out.print("상품 가격을 입력 : ");
+        int product = sc.nextInt();
 
+        int change = money - product; // 거스름 돈
 
+        System.out.println("거스름 돈 : " + change + "원");
+
+        int[] getMoney = {50000, 10000, 5000, 1000, 500, 100, 50, 10};
+        String[] chageMoney = {"50000원권 지폐", "10000원권 지폐", "5000원권 지폐",
+                "1000원권 지폐", "500원권 동전", "100원권 동전", "50원권 동전", "10원권 동전"};
+
+        System.out.println("==============================================");
+
+        for (int i = 0; i < chageMoney.length; i++) {
+            int Nanugi = change / getMoney[i];
+            System.out.println(chageMoney[i] + " " + Nanugi + " 장");
+            change %= getMoney[i];
+        }
+        System.out.println("==============================================");
     }
 }
 

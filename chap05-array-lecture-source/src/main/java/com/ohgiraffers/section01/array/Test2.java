@@ -28,23 +28,23 @@ public class Test2 {
         Scanner sc = new Scanner(System.in);
 
 
-         for (int i = 0; i < str.length; i++) {
+         for (int i = 0; i < 100; i++) {
              System.out.print("0 ~ 4까지의 정수 중에 1개만 입력 : ");
              int num =  sc.nextInt();
             if (num == 0) {
-                System.out.println("딸기");
+                System.out.println(str[0]);
                 return;
             } else if (num == 1) {
-                System.out.println("바나나");
+                System.out.println(str[1]);
                 return;
             } else if (num == 2) {
-                System.out.println("복숭아");
+                System.out.println(str[2]);
                 return;
             } else if (num == 3) {
-                System.out.println("키위");
+                System.out.println(str[3]);
                 return;
             } else if (num == 4) {
-                System.out.println("사과");
+                System.out.println(str[4]);
                 return;
             } else {
                 System.out.println("준비된 과일이 없습니다.");
