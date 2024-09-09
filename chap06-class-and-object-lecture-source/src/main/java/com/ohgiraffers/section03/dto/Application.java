@@ -30,7 +30,12 @@ public class Application {
         member.setActivated(true);
 
         System.out.println("회원번호 : " + member.getMemberNo());
-
+        System.out.println("회원이름 : " + member.getName());
+        System.out.println("회원나이 : " + member.getAge());
+        System.out.println("회원성별 : " + member.getGender());
+        System.out.println("회원 키 : " + member.getHeight());
+        System.out.println("회원 몸무게 : " + member.getWeight());
+        System.out.println("회원 활성상태 : " + member.getIsActivated());
 
     }
 }

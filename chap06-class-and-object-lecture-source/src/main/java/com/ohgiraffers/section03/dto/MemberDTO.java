@@ -103,7 +103,7 @@ public class MemberDTO {
         return weight;
     }
 
-    public boolean isActivated() {
+    public boolean getIsActivated() {
         return isActivated;
     }
 }
