@@ -39,7 +39,7 @@ public class Application {
             case 9 :
                 System.out.println("프로그램을 종료 합니다");
                 break;
-                
+
             default :
                 System.out.println("잘못된 번호를 입력하셨습니다");
                 break;
