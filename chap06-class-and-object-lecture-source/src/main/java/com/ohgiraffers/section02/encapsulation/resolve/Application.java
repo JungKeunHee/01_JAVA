@@ -18,8 +18,11 @@ public class Application {
         *   있도록 해놓은 것이다.
         *   이것을 캡슐화(encapsulation) 이라고 한다.
         *  */
+        monster1.setName("시진핑");
+        monster1.setHp(20);
 
-
+        monster1.getInfo();
+        System.out.println(monster1.getInfo());
 
     }
 }

@@ -1,6 +1,7 @@
 package com.ohgiraffers.section05.parameter;
 
 import java.lang.reflect.Parameter;
+import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
@@ -37,7 +38,10 @@ public class Application {
         System.out.println();
 
         /* index. 3. 클래스 자료형 매개변수 전달 */
+
         RectAngle r1 = new RectAngle(12.5, 22.5);
+        Scanner sc = new Scanner(System.in);
+
 
         System.out.println("인자로 전달하는 클래스 자료형 값 : " + r1);
         pt.testClassParameter(r1);
