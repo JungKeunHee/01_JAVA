@@ -32,7 +32,9 @@ public class Calculrator {
         try {
            if (first == 0) {
                throw new MultipleNotZeroException("첫 번째 0 정수 확인");
-           } else if (second == 0) {
+           }
+
+           if (second == 0) {
                throw new MultipleNotZeroException("두 번째 0 정수 확인");
            }
 
@@ -51,15 +53,18 @@ public class Calculrator {
         try {
            if (first == 0){
                throw new DivideNotZeroException("첫 번째 정수 0 확인");
-           } else if (second == 0) {
+           }
+
+           if (second == 0) {
                throw new DivideNotZeroException("두 번째 0 정수 확인");
            }
             int div = first / second;
             return  first + " / " + second + " = " + div;
 
         } catch (DivideNotZeroException e){
-            System.out.println("0으로 나눌 수 없습니다...");
+            System.out.println("0으로 나눌 수 없습니다");
             System.out.println(e.getMessage());
+
         }
         return "프로그램을 종료합니다...";
     }
